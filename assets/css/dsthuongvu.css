@@ -1,0 +1,79 @@
+*:focus {
+    outline: none;
+}
+
+.breadcrumb-item a{color: #959595;font-size: 10px}
+.breadcrumb-item.active{color: #959595;font-weight: bold}
+.breadcrumb-item+.breadcrumb-item::before{content: ">";font-weight: 300;padding-right: 3px}
+.breadcrumb-item+.breadcrumb-item{padding-left: 3px}
+
+.tv_title{font-family: "Montserrat";font-size: 21px;text-align: center;color: #555;font-weight: 600;position: relative;margin-bottom: 20px}
+.tv_title span{color: #2BB291}
+.tv_title::after{width: 92px;background-color: #02C998;height: 1px;content: "";position: absolute;left: 0;right: 0;bottom: -15px;z-index: 1;margin: 0 auto}
+.tv_title_note{font-size: 12px;color: #9A9A9A;text-align: center;margin-bottom: 20px}
+.tv_title_note span{font-weight: bold}
+
+.tv_search{width: 400px;margin: 0 auto 20px}
+.tv_search_input{width: 358px;height: 28px;border-radius: 5px 0 0 5px;border: 1px solid #AAA;border-right: 0;padding: 0 15px;float: left}
+.tv_search_button{width: 40px;height: 28px;background: #02C998 url("../images/Icon-search.png") no-repeat center center;border: none;float: left;border-radius: 0 5px 5px 0}
+
+.tv_category{margin-bottom: 20px;background-color: #181E2E;padding: 25px 0}
+.tv_category_build{padding: 0;margin: 0}
+.tv_category_build li{float: left;margin-left: 15px;list-style: none}
+.tv_category_build li a{display: block;font-weight: bold;color: #FFF;background-color: #023C77;padding: 5px 10px;font-size: 11px}
+.tv_category_build li a:hover,.tv_category_build li a.active{background-color: #02C998}
+
+.tv_list{margin-bottom: 20px}
+.tv_list_build{margin: 0;padding: 0}
+.tv_list_build li{float: left;margin-right: 11px;margin-bottom: 5px;width: 140px;list-style: none}
+.tv_list_build li:nth-child(6n){margin-right: 0}
+.tv_list_build_img{height: 105px;display: block;margin-bottom: 5px}
+.tv_list_build_title{height: 60px;display: block;overflow: hidden;font-size: 11px;font-weight: bold;color: #808080}
+
+.tv_tag {margin-bottom: 10px}
+.tv_tag span{font-size: 10px;font-weight: bold;background-color: #02C998;padding: 2px 10px;color: #FFF;display: inline-block}
+
+.tv_detail_title{font-family: "Montserrat";font-size: 21px;text-align: left;color: #555;font-weight: 600;margin-bottom: 30px}
+.tv_detail_title span{color: #2BB291}
+.tv_detail_map{float: left;width: 250px}
+.tv_detail_info{float: right;width: 380px}
+.tv_detail_info_flag{margin: 0;padding: 0}
+.tv_detail_info_flag li{margin: 0 10px 10px 0;padding: 0;list-style: none;float: left;border: 1px solid #C0C0C0;border-radius: 4px;padding: 2px;height: 73px;overflow: hidden}
+.tv_detail_info_flag li img{border-radius: 4px}
+
+.tv_detail_info_title{font-size: 15px;font-weight: bold;color: #02C998;margin-bottom: 15px;margin-top: 25px}
+.tv_detail_info_des{font-size: 12px;font-weight: 400;color: #626262;margin-bottom: 5px;font-family: "Lora"}
+.tv_detail_info_des span{font-size: 12px;font-weight: bold;color: #626262;margin-bottom: 5px;font-family: "Lora"}
+
+.tv_detail_people{margin: 30px 0 30px 0;padding: 0}
+.tv_detail_people li{margin: 0 15px 15px 0;padding: 10px;list-style: none;width: 305px;float: left;border-radius: 10px;border: 1px solid #C0C0C0}
+.tv_detail_people li:nth-child(2n){margin-right: 0}
+.tv_di_avatar{float: left;width: 120px}
+.tv_di_info{float: right;width: 140px}
+.tv_di_des{color: #02C998;font-size: 10px;font-weight: bold;border-top: 1px solid #C0C0C0;margin-top: 15px;padding-top: 15px}
+
+.tv_left_category{margin-bottom: 20px}
+.tv_left_category_title{font-family: "Montserrat";padding-bottom: 10px;margin-bottom:10px;font-weight: 600;font-size: 16px;background: transparent url("../images/dottree.svg") no-repeat top 2px left;padding-left: 20px;color: #02C998;border-bottom: 1px solid #02C998}
+.tv_left_category_build{margin: 0;padding: 0}
+.tv_left_category_build li{margin: 0 0 5px 0;padding: 0;list-style: none}
+.tv_left_category_build li a{display: block;color: #000000;font-size: 12px;font-weight: bold}
+.tv_left_category_build li a:hover{background-color: #181E2E;color: #FFF}
+.tv_left_category_build li a span{display: inline-block;width: 26px;font-family: "Montserrat";color: #FFF;background-color: #02C998;padding:0 2px }
+
+.ds_list_hot{border-bottom: 1px solid #C0C0C0;margin-bottom: 20px;padding-bottom: 20px}
+.ds_list_hot_img{display: block;margin-bottom: 15px;}
+.ds_list_hot_title{display: block;font-weight: bold;color: #080808;font-size: 20px;margin-bottom: 5px}
+.ds_list_hot_cat_time{font-size: 10px;color: #02C998;margin-bottom: 15px}
+.ds_list_hot_cat_des{font-family: "Lora";font-weight: 300;color: #2B2B2B}
+
+.ds_list_buld{margin: 0;padding: 0}
+.ds_list_buld li{margin: 0 0 30px 0;padding: 0;list-style: none}
+.ds_list_buld_avatar{float: left;width: 265px;display: block}
+.ds_list_buld_info{float: right;width: 380px}
+.ds_list_buld_info_title{display: block;font-weight: bold;color: #080808;font-size: 15px;margin-bottom: 5px}
+
+.ds_list_more{display: block;position: relative;font-weight: bold;text-transform: uppercase;width: 125px;margin: 30px auto;height: 25px;font-size: 12px;background-color: #02C998;text-align: center;color: #FFF;line-height: 25px;padding-left: 25px}
+.ds_list_more:before{content: "";width: 25px;height: 25px;position: absolute;background: #058465 url("../images/icon-ref.jpg") no-repeat center center;left: 0;top:0;background-size: 16px}
+.ds_list_more:hover{color: #FFF;background-color: #058465}
+
+.mB20{margin-bottom: 20px}
