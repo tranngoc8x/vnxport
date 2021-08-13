@@ -878,3 +878,152 @@ footer{
 .color-green{
   color: #02C998;
 }
+
+.content-detail{
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 50px;
+  margin-bottom: 15px;
+  h4.title{
+    font-size: 20px;
+  }
+  .article-toolbox{
+    display: flex;
+    align-items: center;
+    .author{
+      img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+      }
+    }
+    .article-date{
+      padding: 0 10px;
+      color:#C6C6C6;
+      font-size: 10px;
+    }
+    .article-share{
+      >img{
+        height: 16px;
+      }
+      font-size: 10px;
+      a{
+        img{
+          height: 18px;
+        }
+      }
+    }
+  }
+  .article-content{
+    color: #2B2B2B;
+    font-size: 12px;
+    font-family: Lora, Roboto, sans-serif;
+  }
+}
+.link-recent-article{
+  display: flex;
+  h6{
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #2BB291;
+  }
+  a{
+    font-size: 15px;
+    font-weight: bold;
+    color: #080808;
+  }
+  .post-line{
+    border-right: 1px solid #E0E0E0;
+    width: 2%;
+    margin-right: 2%;
+  }
+  .prev-post{
+    text-align: right;
+    width: 48%;
+  }
+  .next-post{
+    width: 48%;
+  }
+
+}
+.related-post{
+  margin-top: 50px;
+  h4{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    span{
+      position: relative;
+      display: inline-block;
+      background: #FFF;
+      padding-right: 20px;
+      color: #2BB291;
+      z-index: 2;
+    }
+    &:after{
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 0;
+      width: 100%;
+      border-bottom: 1px solid #E0E0E0;
+      content: ''
+    }
+  }
+}
+.block-comment{
+  >h4{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    span{
+      position: relative;
+      display: inline-block;
+      background: #FFF;
+      padding-right: 20px;
+      color: #2BB291;
+      z-index: 2;
+    }
+    &:after{
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 0;
+      width: 100%;
+      border-bottom: 1px solid #E0E0E0;
+      content: ''
+    }
+
+    a{
+      position: absolute;
+      right: 0;
+      height: 20px;
+      background: #2BB291;
+      color: #FFF;
+      font-size: 8px;
+      z-index: 3;
+      padding: 0 10px;
+      &:before{
+        content: "";
+        display: inline-block;
+        background: #068465 url("../images/icon-hide-comment.svg") center center no-repeat;
+        z-index: 4;
+        height: 20px;
+        position: absolute;
+        width: 20px;
+        left: -20px;
+        top: 0;
+      }
+    }
+  }
+}
