@@ -1,13 +1,3 @@
-@mixin max_screen_1640 {
-  @media (max-width: 1640px) {
-    @content;
-  }
-}
-@mixin max_screen_1024 {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
 
 @mixin max_screen_960 {
   @media (max-width: 960px) {
