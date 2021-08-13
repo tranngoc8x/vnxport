@@ -60,6 +60,20 @@
 .tv_left_category_build li a:hover{background-color: #181E2E;color: #FFF}
 .tv_left_category_build li a span{display: inline-block;width: 26px;font-family: "Montserrat";color: #FFF;background-color: #02C998;padding:0 2px }
 
+.ds_list_hot{border-bottom: 1px solid #C0C0C0;margin-bottom: 20px;padding-bottom: 20px}
+.ds_list_hot_img{display: block;margin-bottom: 15px;}
+.ds_list_hot_title{display: block;font-weight: bold;color: #080808;font-size: 20px;margin-bottom: 5px}
+.ds_list_hot_cat_time{font-size: 10px;color: #02C998;margin-bottom: 15px}
+.ds_list_hot_cat_des{font-family: "Lora";font-weight: 300;color: #2B2B2B}
 
+.ds_list_buld{margin: 0;padding: 0}
+.ds_list_buld li{margin: 0 0 30px 0;padding: 0;list-style: none}
+.ds_list_buld_avatar{float: left;width: 265px;display: block}
+.ds_list_buld_info{float: right;width: 380px}
+.ds_list_buld_info_title{display: block;font-weight: bold;color: #080808;font-size: 15px;margin-bottom: 5px}
+
+.ds_list_more{display: block;position: relative;font-weight: bold;text-transform: uppercase;width: 125px;margin: 30px auto;height: 25px;font-size: 12px;background-color: #02C998;text-align: center;color: #FFF;line-height: 25px;padding-left: 25px}
+.ds_list_more:before{content: "";width: 25px;height: 25px;position: absolute;background: #058465 url("../images/icon-ref.jpg") no-repeat center center;left: 0;top:0;background-size: 16px}
+.ds_list_more:hover{color: #FFF;background-color: #058465}
 
 .mB20{margin-bottom: 20px}
