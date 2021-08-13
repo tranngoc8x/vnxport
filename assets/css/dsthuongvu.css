@@ -76,4 +76,19 @@
 .ds_list_more:before{content: "";width: 25px;height: 25px;position: absolute;background: #058465 url("../images/icon-ref.jpg") no-repeat center center;left: 0;top:0;background-size: 16px}
 .ds_list_more:hover{color: #FFF;background-color: #058465}
 
+.tv_nnk_table thead td{font-size: 12px;font-weight: bold;padding: 5px;position: relative}
+.tv_nnk_table thead td:after{content: "";border-bottom: 1px solid #C0C0C0;width: 96%;position: absolute;left: 0;right: 0;bottom: 0}
+.tv_nnk_table tbody td{padding: 10px 5px}
+.tv_nnk_table tbody tr:nth-child(2n) td{background-color: #F7F7F7}
+.tv_nnk_table tbody tr:first-child td{padding-top: 20px}
+.tv_nnk_table_number{background-color: #C6C6C6;padding: 0 5px;font-family: "Montserrat";font-size: 14px;font-weight: bold;color: #FFF}
+.tv_nnk_table_img{float: left;width: 48px;margin-right: 10px}
+.tv_nnk_table_info{float: left;width: calc(100% - 60px);font-weight: bold;font-size: 10px}
+.tv_nnk_table_date{font-size: 10px;color: #02C998;font-weight: bold;text-align: center}
+
+.tv_list_event{margin: 0;padding: 0}
+.tv_list_event li{margin: 0 35px 40px 0;padding: 0;list-style: none;float: left;width: 430px}
+.tv_list_event li:nth-child(2n){margin-right: 0}
+.tv_list_event_img{width: 100%;height: 260px}
+
 .mB20{margin-bottom: 20px}
