@@ -60,3 +60,16 @@ new Swiper(".swiper-event", {
         prevEl: ".block-swiper-event-prev",
     },
 });
+
+$('.toggle-comment').on('click',function(){
+    $('#comment-block').toggle()
+})
+$(".btn-reply-comment").on("click",function(){
+    let id = $(this).data('id')
+    $("#"+id).show()
+})
+
+
+$(".close-reply").on("click",function(){
+    $(this).parent().parent().hide()
+})
