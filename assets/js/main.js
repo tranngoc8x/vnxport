@@ -53,11 +53,25 @@ new Swiper(".swiper-main-2", {
 
 //swiprer main
 new Swiper(".swiper-event", {
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 34,
     navigation: {
         nextEl: ".block-swiper-event-next",
         prevEl: ".block-swiper-event-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+        },
     },
 });
 
