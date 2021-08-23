@@ -64,23 +64,23 @@ header .main-menu {
   height: 52px;
   line-height: 52px;
 }
-header .main-menu ul {
+header .main-menu .main-nav {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
-header .main-menu ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-header .main-menu ul li a {
+header .main-menu .main-nav li .nav-link {
   font-weight: 600;
   text-decoration: none;
+  padding: 0 15px !important;
   color: #000;
   text-transform: uppercase;
 }
-header .main-menu ul li.active a, header .main-menu ul li:hover a {
+header .main-menu .main-nav li .nav-link.active, header .main-menu .main-nav li .nav-link:hover {
   color: #FFF;
+}
+@media (max-width: 960px) {
+  header .main-menu .main-nav li .nav-link {
+    font-size: 10px;
+  }
 }
 header .main-menu .right-menu-link {
   border: 1px solid #FFF;
