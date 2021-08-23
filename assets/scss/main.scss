@@ -487,12 +487,19 @@ main {
     display: flex;
     margin-bottom: 15px;
     width: 100%;
-
+    @include max_screen_768{
+      flex-direction: column;
+    }
     img {
       width: 45%;
       margin-right: 10px;
       align-self: flex-start;
       flex: 0 0 auto;
+    }
+    @include max_screen_768{
+     img{
+       width: 100%;
+     }
     }
 
     .title {
@@ -502,7 +509,6 @@ main {
       margin-bottom: 3px;
       color: #000;
     }
-
     h5 {
       color: #02C998;
       font-size: 10px;
@@ -540,7 +546,8 @@ main {
 .block-slider {
   background: #181e2e url("../images/bg-block-slider.png") center center no-repeat;
   background-size: cover;
-  height: 385px;
+  min-height: 385px;
+
   width: 100%;
 
   .nav {
@@ -617,7 +624,16 @@ main {
 
 .swiper-button-prev {
   left: -60px;
+  @include max_screen_960{
+    left: -30px;
+  }
+  @include max_screen_768{
+    left: -10px;
+  }
 
+  @include max_screen_620{
+    left: 0px;
+  }
   &:after {
     background: url('../images/arrow-left.png') center center no-repeat;
     background-size: 50%;
@@ -630,7 +646,16 @@ main {
 
 .swiper-button-next {
   right: -60px;
+  @include max_screen_960{
+    right: -30px;
+  }
+  @include max_screen_768{
+    right: -10px;
+  }
 
+  @include max_screen_620{
+    right: 0px;
+  }
   &:after {
     background: url('../images/arrow-right.png') center center no-repeat;
     background-size: 50%;

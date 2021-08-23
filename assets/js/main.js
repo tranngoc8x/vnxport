@@ -19,6 +19,24 @@ new Swiper(".swiper-infographic", {
         nextEl: ".block-swiper-main-next",
         prevEl: ".block-swiper-main-prev",
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        640: {
+            slidesPerView:2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 12,
+        },
+    },
 });
 
 //swiprer main
@@ -30,6 +48,24 @@ new Swiper(".swiper-blog", {
     navigation: {
         nextEl: ".nav-blog-next",
         prevEl: ".nav-blog-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        640: {
+            slidesPerView:2,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 12,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 12,
+        },
     },
 });
 new Swiper(".swiper-main-2", {
@@ -60,7 +96,7 @@ new Swiper(".swiper-event", {
         prevEl: ".block-swiper-event-prev",
     },
     breakpoints: {
-        640: {
+        320: {
             slidesPerView: 1,
             spaceBetween: 0,
         },
