@@ -55,26 +55,48 @@ header .mid-head {
   background: #003060;
   height: 96px; }
 
+@media (max-width: 768px) {
+  header .mid-head {
+    height: auto; } }
+
+header .mid-head img {
+  max-width: 100%; }
+
 header .main-menu {
   background: #2BB291;
   height: 52px;
   line-height: 52px; }
 
+header .main-menu #navbarSupportedContent {
+  z-index: 9; }
+
+@media (max-width: 768px) {
+  header .main-menu #navbarSupportedContent {
+    background: #FFF; } }
+
 header .main-menu .main-nav {
   height: 100%; }
 
-header .main-menu .main-nav li .nav-link {
+@media (max-width: 620px) {
+  header .main-menu .main-nav .nav-item:hover {
+    background: #1a446d; } }
+
+header .main-menu .main-nav .nav-item .nav-link {
   font-weight: 600;
   text-decoration: none;
   padding: 0 15px !important;
   color: #000;
   text-transform: uppercase; }
 
-header .main-menu .main-nav li .nav-link.active, header .main-menu .main-nav li .nav-link:hover {
+header .main-menu .main-nav .nav-item .nav-link.active, header .main-menu .main-nav .nav-item .nav-link:hover {
   color: #FFF; }
 
+@media (max-width: 768px) {
+  header .main-menu .main-nav .nav-item .nav-link.active, header .main-menu .main-nav .nav-item .nav-link:hover {
+    color: #023C77; } }
+
 @media (max-width: 960px) {
-  header .main-menu .main-nav li .nav-link {
+  header .main-menu .main-nav .nav-item .nav-link {
     font-size: 10px; } }
 
 header .main-menu .right-menu-link {
@@ -131,11 +153,19 @@ header .search-bar .search-menu .search-item {
   margin: 5px 10px 0;
   position: relative; }
 
+@media (max-width: 960px) {
+  header .search-bar .search-menu .search-item {
+    margin-top: 9px; } }
+
 header .search-bar .search-menu .search-item a {
-  padding: 11px 10px 13px; }
+  padding: 11px 10px 13px;
+  display: block; }
+
+@media (max-width: 960px) {
+  header .search-bar .search-menu .search-item a {
+    font-size: 8px; } }
 
 header .search-bar .search-menu .search-item a:hover, header .search-bar .search-menu .search-item a.active {
-  display: block;
   height: 100%;
   background: #003060;
   color: #FFF;
@@ -155,6 +185,10 @@ header .search-bar .search-menu .search-item .submenu-search {
   background: #003060;
   padding: 15px 20px; }
 
+@media (max-width: 960px) {
+  header .search-bar .search-menu .search-item .submenu-search {
+    top: 35px; } }
+
 header .search-bar .search-menu .search-item .submenu-search li {
   width: 100%;
   cursor: pointer; }
@@ -172,6 +206,10 @@ header .search-bar .search-menu .search-item .submenu-search li > a {
   display: block;
   border-radius: 0;
   position: relative; }
+
+@media (max-width: 960px) {
+  header .search-bar .search-menu .search-item .submenu-search li > a {
+    font-size: 10px; } }
 
 header .search-bar .search-menu .search-item .submenu-search li > a img {
   margin-right: 5px; }
@@ -211,6 +249,31 @@ header .search-bar .search-menu .search-item .submenu-search li .list-menu-conte
 
 header .search-bar .search-menu .search-item .submenu-search li:hover .list-menu-content {
   display: block; }
+
+@media (max-width: 768px) {
+  header .search-bar .search-menu {
+    background: #FFF;
+    height: auto; }
+  header .search-bar .search-menu .nav-item {
+    display: block;
+    width: 100%; }
+  header .search-bar .search-menu .nav-item a.active {
+    border-radius: 0; }
+  header .search-bar .search-menu .nav-item .submenu-search {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0; }
+  header .search-bar .search-menu .nav-item .submenu-search li > a {
+    width: 100%; }
+  header .search-bar .search-menu .nav-item .submenu-search li > a:hover {
+    width: 100%; }
+  header .search-bar .search-menu .nav-item .submenu-search li .list-menu-content {
+    position: relative;
+    left: 0;
+    top: unset;
+    margin-top: 10px;
+    margin-bottom: 10px; } }
 
 header .search-bar .search-input-block {
   box-sizing: border-box; }
@@ -565,6 +628,11 @@ main .sidebar .email-register .checkbox-agree input {
   margin-right: -20px;
   padding-right: 20px; }
 
+@media (max-width: 768px) {
+  .block-event .swiper-container {
+    margin-right: 0;
+    padding-right: 0; } }
+
 .block-event .swiper-button {
   border-color: #2B2B2B; }
 
@@ -649,6 +717,10 @@ main .sidebar .email-register .checkbox-agree input {
   background-size: contain;
   height: 38px;
   width: 96px; }
+
+@media (max-width: 768px) {
+  .items-event:after {
+    background: none; } }
 
 .partner-block {
   max-width: 708px;
