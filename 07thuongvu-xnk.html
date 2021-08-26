@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Danh sách tin chung</title>
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -13,28 +16,28 @@
 
 
 <header>
-    <div class="content">
+    <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <img src="/assets/files/Image 94.png" alt="" class="w-100">
+                <img src="assets/files/Image 94.png" alt="" class="w-100">
             </div>
             <div class="col-12 mt-3">
                 <div class="row">
-                    <div class="col-6 d-flex justify-content-start align-items-center">
-                        <img src="/assets/images/icon-top-new.png" alt="" class="icon-top-new">
+                    <div class="col-sm-6 d-flex justify-content-start align-items-center">
+                        <img src="assets/images/icon-top-new.png" alt="" class="icon-top-new">
                         <span class="px-1">|</span>
                         <span>Thông tin thị trường quốc tế cập nhật 24/7 từ Bộ Công Thương</span>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <div class="top-menu">
                             <ul>
                                 <li><a href="#" class="btn-register d-flex justify-content-center align-items-center">
-                                    <img src="/assets/images/icon-register.png" alt="">
+                                    <img src="assets/images/icon-register.png" alt="">
                                     <span class="px-1">|</span>
                                     <span>Đăng ký</span>
                                 </a></li>
                                 <li><a href="#" class="btn-login d-flex justify-content-center align-items-center">
-                                    <img src="/assets/images/icon-login.png" alt="">
+                                    <img src="assets/images/icon-login.png" alt="">
                                     <span class="px-1">|</span>
                                     <span>Đăng nhập</span>
                                 </a></li>
@@ -47,167 +50,213 @@
         </div>
     </div>
     <div class="mid-head">
-        <div class="content h-100">
-            <div class="d-flex justify-content-between align-items-center h-100">
-                <img src="/assets/files/Group 44.svg" alt="">
-                <img src="/assets/files/Image 101.png" alt="">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between flex-column flex-md-row align-items-center h-100">
+                <img src="assets/files/Group 44.svg"  alt="">
+                <img src="assets/files/Image 101.png"  alt="">
             </div>
         </div>
     </div>
     <div class="main-menu">
-        <div class="content d-flex justify-content-between align-items-center">
-            <ul>
-                <li class="active"><a href="#">Trang chủ</a></li>
-                <li class=""><a href="#">Tin tức</a></li>
-                <li class=""><a href="#">Thương vụ</a></li>
-                <li class=""><a href="#">Tài liệu</a></li>
-                <li class=""><a href="#">Sự kiện</a></li>
-                <li class=""><a href="#">Infographic</a></li>
-                <li class=""><a href="#">Blog</a></li>
-            </ul>
-            <a href="#" class="right-menu-link">
-                <img src="/assets/images/icon-mail.png" alt="">
-                Danh sách nhập khẩu</a>
+        <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar py-0 w-100 navbar-expand-md navbar-light">
+                <div class="w-100">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
+                        <ul class="navbar-nav main-nav">
+                            <li class="nav-item">
+                                <a class="nav-link py-0 active" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0 " href="#">
+                                    Thương vụ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="#">Tài liệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="#">Sự kiện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="#">Infographic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item d-block d-sm-none">
+                                <a class="nav-link py-0" href="#">Danh sách nhập khẩu</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <a href="#" class="right-menu-link d-none d-sm-block"><img src="assets/images/icon-mail.png" alt="">Danh
+                sách nhập khẩu</a>
         </div>
     </div>
     <div class="search-bar">
-        <div class="content d-flex justify-content-between">
-            <ul class="search-menu">
-                <li class="first-item"><a href="javascript:void(0)"><img src="/assets/images/icon-search-bar.png"
-                                                                         alt="">
-                    Tìm kiếm:
-                </a></li>
-                <li class="search-item">
-                    <a class="active" href="javascript:void(0)">QUỐC GIA / VÙNG LÃNH THỔ</a>
-                    <ul class="submenu-search">
-                        <li><a href="#">
-                            Châu Âu</a>
-                            <div class="list-menu-content">
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Châu Á</a>
-                            <div class="list-menu-content">
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                                <a href="#">Pháp</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Châu Phi</a></li>
-                        <li><a href="#">Châu Mỹ</a></li>
-                    </ul>
-                </li>
-                <li class="search-item"><a href="javascript:void(0)">Khu vực mậu dịch</a></li>
-                <li class="search-item"><a href="javascript:void(0)">Khách hàng</a></li>
-            </ul>
-            <div class="search-input-block">
+        <div class="container d-flex justify-content-between">
+            <nav class="navbar py-0 w-100 navbar-expand-md navbar-light">
+                <div class="w-100">
+                    <button class="navbar-toggler mt-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarSearch">
+                        <ul class="navbar-nav search-menu">
+                            <li class="nav-item first-item d-none d-md-block"><a href="javascript:void(0)"><img
+                                    src="assets/images/icon-search-bar.png"
+                                    alt="">
+                                Tìm kiếm:
+                            </a></li>
+                            <li class="nav-item search-item">
+                                <a class="nav-link active" href="javascript:void(0)">QUỐC GIA / VÙNG LÃNH THỔ</a>
+                                <ul class="submenu-search">
+                                    <li><a href="#">
+                                        Châu Âu</a>
+                                        <div class="list-menu-content">
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Châu Á</a>
+                                        <div class="list-menu-content">
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                            <a href="#">Pháp</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Châu Phi</a></li>
+                                    <li><a href="#">Châu Mỹ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item search-item"><a class="nav-link" href="javascript:void(0)">Khu vực mậu
+                                dịch</a></li>
+                            <li class="nav-item search-item"><a class="nav-link" href="javascript:void(0)">Khách
+                                hàng</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="search-input-block d-none d-md-block">
                 <form action="#">
                     <input type="text" placeholder="tìm kiếm" class="search-input">
-                    <button type="submit" class="search-submit"><img src="/assets/images/icon-btn-search.svg" alt="">
+                    <button type="submit" class="search-submit"><img src="assets/images/icon-btn-search.svg" alt="">
                     </button>
                 </form>
             </div>
@@ -218,7 +267,7 @@
 <main class="container">
     <div class="content">
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
@@ -232,10 +281,10 @@
     </div>
     <div class="content">
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-12">
                 <div class="tv_tag"><span>THƯƠNG VỤ VIỆT NAM TẠI NHẬT BẢN</span></div>
             </div>
-            <div class="col-9">
+            <div class="col-lg-9">
                 <div class="tv_detail_title">
                     Thông tin nhà nhập khẩu
                 </div>
@@ -273,7 +322,7 @@
                 </div>
 
             </div>
-            <div class="col-3">
+            <div class="col-lg-3">
                 <div class="tv_left_category">
                     <div class="tv_left_category_title">
                         Danh mục
@@ -355,67 +404,82 @@
 </main>
 
 <footer>
-    <div class="content d-flex justify-content-between">
-        <div class="footer-left">
-            <div class="company-info">
-                <img src="/assets/images/footer-logo.svg" alt="">
-                <h4>CỔNG THÔNG TIN THỊ TRƯỜNG NƯỚC NGOÀI</h4>
-                <h5>Vận hành bởi: <img class="ms-1" src="/assets/images/img-work.svg" alt=""></h5>
-                <p><strong>Trung tâm Phát triển Thương mại điện tử (ECOMVIET) Cục Thương mại điện tử và Kinh tế số
-                    - Bộ Công Thương</strong></p>
-                <p>Ðịa chỉ: <strong>25 Ngô Quyền - Hoàn Kiếm - Hà Nội.</strong></p>
-                <p>Email: <a class="text-white" href="mailto:vne@ecomviet.vn">vne@ecomviet.vn</a></p>
-            </div>
-            <div class="list-trade-service">
-                <h4>Trades Service</h4>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a href="#">Website Design</a>
-                        <a href="#">Market Research</a>
-                        <a href="#">Training Courses</a>
-                        <a href="#">Account Operation</a>
-                        <a href="#">Business Connection</a>
+    <div class="container">
+        <div class="row">
+            <div class="footer-left col-md-4">
+                <div class="d-flex">
+                    <div>
+                        <div class="company-info">
+                            <img src="assets/images/footer-logo.svg" alt="">
+                            <h4>CỔNG THÔNG TIN THỊ TRƯỜNG NƯỚC NGOÀI</h4>
+                            <h5>Vận hành bởi: <img class="ms-1" src="assets/images/img-work.svg" alt=""></h5>
+                            <p><strong>Trung tâm Phát triển Thương mại điện tử (ECOMVIET) Cục Thương mại điện tử và Kinh
+                                tế số
+                                - Bộ Công Thương</strong></p>
+                            <p>Ðịa chỉ: <strong>25 Ngô Quyền - Hoàn Kiếm - Hà Nội.</strong></p>
+                            <p>Email: <a class="text-white" href="mailto:vne@ecomviet.vn">vne@ecomviet.vn</a></p>
+                        </div>
+                        <div class="list-trade-service">
+                            <h4>Trades Service</h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a href="#">Website Design</a>
+                                    <a href="#">Market Research</a>
+                                    <a href="#">Training Courses</a>
+                                    <a href="#">Account Operation</a>
+                                    <a href="#">Business Connection</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#">Website Design</a>
+                                    <a href="#">Market Research</a>
+                                    <a href="#">Training Courses</a>
+                                    <a href="#">Account Operation</a>
+                                    <a href="#">Business Connection</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <a href="#">Website Design</a>
-                        <a href="#">Market Research</a>
-                        <a href="#">Training Courses</a>
-                        <a href="#">Account Operation</a>
-                        <a href="#">Business Connection</a>
+                    <div class="footer-line"></div>
+                </div>
+
+            </div>
+            <div class="footer-right col-md-4">
+                <div class="footer-menu">
+                    <a class="active" href="#">Trang chủ</a>
+                    <a class="" href="#">Thương vụ</a>
+                    <a class="" href="#">Tài liệu</a>
+                    <a class="" href="#">Sự kiện</a>
+                    <a class="" href="#">Nhà nhập khẩu</a>
+                    <a class="" href="#">Infographic</a>
+                    <a class="" href="#">Giới thiệu</a>
+                </div>
+                <div class="unit-owner d-flex align-items-center">
+                    <span class="color-green">Đơn vị chủ quản</span>
+                    <img src="assets/files/Image 39.png" alt="">
+                    <img src="assets/files/Image 40.png" alt="">
+                </div>
+                <p class="fw-bold">Cục Thương mại điện tử và Kinh tế số - Bộ Công Thương</p>
+                <div class="mt-4 d-flex align-items-center flex-column flex-lg-row">
+                    <span class="color-green pe-2"><strong>Kết nối với chúng tôi</strong></span>
+                    <div>
+                        <a href="#"><img src="assets/files/Image 38.png" alt=""></a>
                     </div>
                 </div>
+                <div class="mt-4 d-flex align-items-center flex-column flex-lg-row">
+                    <span class="color-green pe-2"><strong>Tải ứng dụng tại</strong></span>
+                    <div><a href="#"><img src="assets/files/Image 37.png" alt=""></a></div>
+                </div>
+                <div class="copyright mt-4">
+                    <p class="mb-0">©<strong> 2015 - Bản quyền thuộc về Trung tâm Phát triển thương mại điện tử -
+                        Cục
+                        Thương mại điện tử và Kinh tế số.</strong></p>
+                    <p>Giấy phép số 147/GP-TTĐT của Cục Quản lý phát thanh, truyền hình và thông tin điện tử - Bộ
+                        Thông tin
+                        và Truyền thông cấp ngày 12/10/2015</p>
+                </div>
             </div>
-        </div>
-        <div class="footer-line"></div>
-        <div class="footer-right">
-            <div class="footer-menu">
-                <a class="active" href="#">Trang chủ</a>
-                <a class="" href="#">Thương vụ</a>
-                <a class="" href="#">Tài liệu</a>
-                <a class="" href="#">Sự kiện</a>
-                <a class="" href="#">Nhà nhập khẩu</a>
-                <a class="" href="#">Infographic</a>
-                <a class="" href="#">Giới thiệu</a>
-            </div>
-            <div class="unit-owner d-flex align-items-center">
-                <span class="color-green">Đơn vị chủ quản</span>
-                <img src="/assets/files/Image 39.png" alt="">
-                <img src="/assets/files/Image 40.png" alt="">
-            </div>
-            <p class="fw-bold">Cục Thương mại điện tử và Kinh tế số - Bộ Công Thương</p>
-            <div class="mt-4 d-flex align-items-center">
-                <span class="color-green pe-2"><strong>Kết nối với chúng tôi</strong></span>
-                <a href="#"><img src="/assets/files/Image 38.png" alt=""></a>
-            </div>
-            <div class="mt-4 d-flex align-items-center">
-                <span class="color-green pe-2"><strong>Tải ứng dụng tại</strong></span>
-                <a href="#"><img src="/assets/files/Image 37.png" alt=""></a>
-            </div>
-            <div class="copyright mt-4">
-                <p class="mb-0">©<strong> 2015 - Bản quyền thuộc về Trung tâm Phát triển thương mại điện tử - Cục
-                    Thương mại điện tử và Kinh tế số.</strong></p>
-                <p>Giấy phép số 147/GP-TTĐT của Cục Quản lý phát thanh, truyền hình và thông tin điện tử - Bộ Thông tin
-                    và Truyền thông cấp ngày 12/10/2015</p>
+            <div class="col-md-4">
+                <h4>Like để nhận thông tin về XNK</h4>
             </div>
         </div>
     </div>

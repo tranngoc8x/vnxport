@@ -863,7 +863,16 @@ main {
       color: #484848;
     }
   }
-
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../images/bg-event-item-before.svg") right bottom no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 155px;
+  }
   &:after {
     content: '';
     position: absolute;
