@@ -69,10 +69,11 @@ header {
   .mid-head {
     background: #003060;
     height: 96px;
-    @include max_screen_768{
+    @include max_screen_768 {
       height: auto;
     }
-    img{
+
+    img {
       max-width: 100%;
     }
   }
@@ -84,7 +85,7 @@ header {
 
     #navbarSupportedContent {
       z-index: 9;
-      @include max_screen_768{
+      @include max_screen_768 {
         background: #FFF;
       }
     }
@@ -302,28 +303,33 @@ header {
         }
       }
 
-      @include max_screen_768{
+      @include max_screen_768 {
         background: #FFF;
         height: auto;
         .nav-item {
           display: block;
           width: 100%;
+
           a.active {
             border-radius: 0;
           }
-          .submenu-search{
+
+          .submenu-search {
             position: relative;
             width: 100%;
             left: 0;
             top: 0;
+
             li {
               > a {
                 width: 100%;
-                &:hover{
+
+                &:hover {
                   width: 100%;
                 }
               }
-              .list-menu-content{
+
+              .list-menu-content {
                 position: relative;
                 left: 0;
                 top: unset;
@@ -863,6 +869,7 @@ main {
       color: #484848;
     }
   }
+
   &:before {
     content: '';
     position: absolute;
@@ -873,6 +880,7 @@ main {
     width: 100%;
     height: 155px;
   }
+
   &:after {
     content: '';
     position: absolute;
@@ -882,7 +890,7 @@ main {
     background-size: contain;
     height: 38px;
     width: 96px;
-    @include max_screen_768{
+    @include max_screen_768 {
       background: none;
     }
   }
@@ -1073,6 +1081,10 @@ footer {
     color: #2B2B2B;
     font-size: 12px;
     font-family: Lora, Roboto, sans-serif;
+
+    img {
+      max-width: 100% !important;
+    }
   }
 }
 
@@ -1531,7 +1543,7 @@ footer {
 .event-guest {
   background: url('../images/bg-banner-event.png') center center no-repeat;
   background-size: cover;
-  height: 480px;
+  min-height: 480px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -1546,7 +1558,9 @@ footer {
   }
 
   .list-guest {
-
+    flex-wrap: wrap;
+    max-width: 520px;
+    margin: 0 auto;
     img {
       border-radius: 50%;
       width: 100px;
@@ -1559,16 +1573,21 @@ footer {
 }
 
 .event-number {
-  height: 270px;
+  min-height: 270px;
   background: #2BB291;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .list-number {
-    > div {
-      text-align: center;
-      margin: 0 30px;
+    @include max_screen_768{
+      padding: 20px 0;
+    }
+    .col-6{
+      > div {
+        text-align: center;
+        margin: 0 30px;
+      }
     }
 
     img {

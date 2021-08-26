@@ -925,6 +925,9 @@ footer .footer-right .unit-owner img {
   font-size: 12px;
   font-family: Lora, Roboto, sans-serif;
 }
+.content-detail .article-content img {
+  max-width: 100% !important;
+}
 
 .link-recent-article {
   display: flex;
@@ -1318,7 +1321,7 @@ footer .footer-right .unit-owner img {
 .event-guest {
   background: url("../images/bg-banner-event.png") center center no-repeat;
   background-size: cover;
-  height: 480px;
+  min-height: 480px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -1331,6 +1334,11 @@ footer .footer-right .unit-owner img {
   font-weight: bold;
   text-align: center;
 }
+.event-guest .list-guest {
+  flex-wrap: wrap;
+  max-width: 520px;
+  margin: 0 auto;
+}
 .event-guest .list-guest img {
   border-radius: 50%;
   width: 100px;
@@ -1341,13 +1349,18 @@ footer .footer-right .unit-owner img {
 }
 
 .event-number {
-  height: 270px;
+  min-height: 270px;
   background: #2BB291;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.event-number .list-number > div {
+@media (max-width: 768px) {
+  .event-number .list-number {
+    padding: 20px 0;
+  }
+}
+.event-number .list-number .col-6 > div {
   text-align: center;
   margin: 0 30px;
 }
