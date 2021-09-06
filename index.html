@@ -18,12 +18,12 @@
 <header>
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center d-none d-md-block">
                 <img src="/assets/files/Image 94.png" alt="" class="w-100">
             </div>
-            <div class="col-12 mt-3">
+            <div class="col-12 mt-1 mb-1 mt-md-3 mb-md-0">
                 <div class="row">
-                    <div class="col-sm-6 d-flex justify-content-start align-items-center">
+                    <div class="col-sm-6 d-none d-md-flex justify-content-start align-items-center">
                         <img src="/assets/images/icon-top-new.png" alt="" class="icon-top-new">
                         <span class="px-1">|</span>
                         <span>Thông tin thị trường quốc tế cập nhật 24/7 từ Bộ Công Thương</span>
@@ -50,17 +50,32 @@
         </div>
     </div>
     <div class="mid-head">
-        <div class="container h-100">
+        <div class="container d-none d-md-block h-100">
             <div class="d-flex justify-content-between flex-column flex-md-row align-items-center h-100">
                 <img src="/assets/files/Group 44.svg"  alt="">
                 <img src="/assets/files/Image 101.png"  alt="">
             </div>
         </div>
+        <div class="d-block d-md-none">
+            <img src="/assets/files/Image 101.png" class="w-100" alt="">
+        </div>
+    </div>
+    <div class="d-flex d-md-none justify-content-start align-items-center">
+        <img src="/assets/images/icon-top-new.png" alt="" class="icon-top-new">
+        <span class="px-1">|</span>
+        <span>Thông tin thị trường quốc tế cập nhật 24/7 từ Bộ Công Thương</span>
     </div>
     <div class="main-menu">
         <div class="container d-flex justify-content-between align-items-center">
+            <nav class="navbar navbar-light d-block d-md-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/assets/files/Group 44.svg" alt="">
+                    </a>
+                </div>
+            </nav>
             <nav class="navbar py-0 w-100 navbar-expand-md navbar-light">
-                <div class="w-100">
+                <div class="w-100 text-end text-md-start">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -104,10 +119,10 @@
         </div>
     </div>
     <div class="search-bar">
-        <div class="container d-flex justify-content-between">
-            <nav class="navbar py-0 w-100 navbar-expand-md navbar-light">
+        <div class="container px-0 px-md-2 d-flex justify-content-between flex-column flex-md-row">
+            <nav class="navbar mx-0 mx-md-1 py-0 w-100 navbar-expand-md navbar-light order-1 order-md-0">
                 <div class="w-100">
-                    <button class="navbar-toggler mt-1" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler nav-search mt-1" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false"
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -253,7 +268,7 @@
                 </div>
             </nav>
 
-            <div class="search-input-block d-none d-md-block">
+            <div class="search-input-block d-block">
                 <form action="#">
                     <input type="text" placeholder="tìm kiếm" class="search-input">
                     <button type="submit" class="search-submit"><img src="/assets/images/icon-btn-search.svg" alt="">

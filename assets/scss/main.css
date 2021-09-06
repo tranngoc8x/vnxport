@@ -72,6 +72,13 @@ header .main-menu {
   height: 52px;
   line-height: 52px;
 }
+@media (max-width: 768px) {
+  header .main-menu {
+    height: auto;
+    line-height: unset;
+    background: #FFF;
+  }
+}
 header .main-menu #navbarSupportedContent {
   z-index: 9;
 }
@@ -79,6 +86,13 @@ header .main-menu #navbarSupportedContent {
   header .main-menu #navbarSupportedContent {
     background: #FFF;
   }
+}
+header .main-menu .navbar-toggler {
+  border: 0;
+  padding: 0;
+}
+header .main-menu .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(43,178,145, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 header .main-menu .main-nav {
   height: 100%;
@@ -129,6 +143,13 @@ header .search-bar {
   height: 60px;
   background: url("../images/bg-search-bar.svg") center bottom repeat-x;
 }
+@media (max-width: 768px) {
+  header .search-bar {
+    height: auto;
+    line-height: unset;
+    background: #FFF;
+  }
+}
 header .search-bar .search-menu {
   list-style: none;
   margin: 0;
@@ -136,6 +157,12 @@ header .search-bar .search-menu {
   height: 50px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 768px) {
+  header .search-bar .search-menu {
+    background: #003060;
+    color: #FFF;
+  }
 }
 header .search-bar .search-menu .first-item {
   padding-right: 15px;
@@ -153,10 +180,17 @@ header .search-bar .search-menu li {
   list-style: none;
   display: inline-block;
 }
-header .search-bar .search-menu li a {
+header .search-bar .search-menu li a,
+header .search-bar .search-menu li .nav-link {
   text-transform: uppercase;
   color: #003060;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  header .search-bar .search-menu li a,
+header .search-bar .search-menu li .nav-link {
+    color: #FFF;
+  }
 }
 header .search-bar .search-menu .search-item {
   color: #003060;
@@ -166,6 +200,11 @@ header .search-bar .search-menu .search-item {
 @media (max-width: 960px) {
   header .search-bar .search-menu .search-item {
     margin-top: 9px;
+  }
+}
+@media (max-width: 768px) {
+  header .search-bar .search-menu .search-item {
+    color: #FFF;
   }
 }
 header .search-bar .search-menu .search-item a {
@@ -266,7 +305,6 @@ header .search-bar .search-menu .search-item .submenu-search li:hover .list-menu
 }
 @media (max-width: 768px) {
   header .search-bar .search-menu {
-    background: #FFF;
     height: auto;
   }
   header .search-bar .search-menu .nav-item {
@@ -296,6 +334,17 @@ header .search-bar .search-menu .search-item .submenu-search li:hover .list-menu
     margin-bottom: 10px;
   }
 }
+header .search-bar .nav-search {
+  margin: 10px;
+  padding: 5px 7px;
+  border: 0;
+}
+header .search-bar .nav-search .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,48,96, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+header .search-bar .nav-search:focus {
+  box-shadow: none;
+}
 header .search-bar .search-input-block {
   box-sizing: border-box;
 }
@@ -304,6 +353,11 @@ header .search-bar .search-input-block form {
   height: 50px;
   display: flex;
   flex-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  header .search-bar .search-input-block form {
+    padding: 0 10px;
+  }
 }
 header .search-bar .search-input-block .search-input {
   height: 22px;
@@ -316,12 +370,22 @@ header .search-bar .search-input-block .search-input {
   outline: 0;
   min-width: 180px;
 }
+@media (max-width: 768px) {
+  header .search-bar .search-input-block .search-input {
+    height: 30px;
+  }
+}
 header .search-bar .search-input-block .search-submit {
   border: 0;
   height: 22px;
   background: #2BB291;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+@media (max-width: 768px) {
+  header .search-bar .search-input-block .search-submit {
+    height: 30px;
+  }
 }
 
 .banner {
