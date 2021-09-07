@@ -264,7 +264,12 @@ header .search-bar .search-menu .search-item .submenu-search li > a:hover:after 
   position: absolute;
   height: 28px;
   width: 16px;
-  right: 5px; }
+  right: 6px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 header .search-bar .search-menu .search-item .submenu-search li .list-menu-content {
   display: none;
