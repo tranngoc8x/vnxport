@@ -7,8 +7,12 @@ html {
 
 body {
   min-height: 100%;
-  font-size: 12px;
+  font-size: 13px;
   font-family: "Roboto", sans-serif; }
+
+@media (max-width: 500px) {
+  body {
+    font-size: 12px; } }
 
 a {
   text-decoration: none; }
@@ -37,7 +41,7 @@ header .top-menu ul li {
 
 header .top-menu ul li a {
   color: #2B2B2B;
-  font-size: 12px;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: 500; }
 
@@ -346,7 +350,8 @@ header .search-bar .search-input-block .search-input {
 
 @media (max-width: 768px) {
   header .search-bar .search-input-block .search-input {
-    height: 30px; } }
+    height: 30px;
+    max-width: 100%; } }
 
 header .search-bar .search-input-block .search-submit {
   border: 0;
@@ -374,7 +379,7 @@ main {
   margin-top: 15px; }
 
 main .main-content .left-content .items .title {
-  font-size: 12px; }
+  font-size: 1rem; }
 
 main .main-content .left-content .item-big .title {
   color: #02C998; }
@@ -402,7 +407,7 @@ main .sidebar .photo h4 span {
   z-index: 2;
   color: #02C998;
   text-transform: uppercase;
-  font-size: 15px; }
+  font-size: 1.25rem; }
 
 main .sidebar .photo h4:after {
   content: "";
@@ -429,7 +434,7 @@ main .sidebar .email-register img {
   transform: translate(-50%, -50%); }
 
 main .sidebar .email-register h4 {
-  font-size: 16px;
+  font-size: 1.33rem;
   color: #555555;
   font-weight: 600; }
 
@@ -449,7 +454,7 @@ main .sidebar .email-register .input-res {
 main .sidebar .email-register .submit {
   background: #02C998;
   color: #FFF;
-  font-size: 12px;
+  font-size: 1rem;
   text-transform: uppercase;
   margin-top: 10px;
   border: 0;
@@ -491,7 +496,7 @@ main .sidebar .email-register .checkbox-agree input {
   width: 100%;
   padding: 0 10px;
   line-height: 32px;
-  font-size: 13px;
+  font-size: 1.08rem;
   font-weight: 500;
   color: #FFF;
   text-transform: uppercase;
@@ -522,7 +527,7 @@ main .sidebar .email-register .checkbox-agree input {
     width: 100%; } }
 
 .block-items .items .title {
-  font-size: 14px;
+  font-size: 1.16rem;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 3px;
@@ -539,7 +544,7 @@ main .sidebar .email-register .checkbox-agree input {
   font-weight: 600; }
 
 .block-items .items p {
-  font-size: 12px;
+  font-size: 1rem;
   color: #2B2B2B;
   font-family: Lora, Roboto, sans-serif; }
 
@@ -552,7 +557,7 @@ main .sidebar .email-register .checkbox-agree input {
 
 .block-items .items.item-big .title {
   margin-top: 10px;
-  font-size: 15px; }
+  font-size: 1.25rem; }
 
 .block-slider {
   background: #181e2e url("../images/bg-block-slider.png") center center no-repeat;
@@ -573,12 +578,12 @@ main .sidebar .email-register .checkbox-agree input {
   color: #FFF;
   padding-left: 0;
   padding-right: 15px;
-  font-size: 12px; }
+  font-size: 1rem; }
 
 .block-slider .nav-link.active {
   background: transparent;
   color: #02C998;
-  font-size: 14px;
+  font-size: 1.16rem;
   font-weight: 600; }
 
 .block-slider .items {
@@ -671,7 +676,7 @@ main .sidebar .email-register .checkbox-agree input {
   opacity: 1; }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  font-size: 14px; }
+  font-size: 1.16rem; }
 
 .swipper-main-2 {
   max-width: 700px;
@@ -713,7 +718,7 @@ main .sidebar .email-register .checkbox-agree input {
   margin: 0 5px; }
 
 .block-lists .list-inner h4 {
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0;
   font-family: Lora, Roboto, sans-serif; }
@@ -748,7 +753,7 @@ main .sidebar .email-register .checkbox-agree input {
   display: block;
   width: 100%;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #02C998;
   margin-bottom: 20px; }
 
@@ -808,7 +813,7 @@ main .sidebar .email-register .checkbox-agree input {
   background: #FFF;
   color: #02C998;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 1.25rem;
   font-weight: 600; }
 
 .partner-block .partner-title:before {
@@ -843,21 +848,21 @@ footer {
   color: #FFF; }
 
 footer .footer-left .company-info h4 {
-  font-size: 14px; }
+  font-size: 1.16rem; }
 
 footer .footer-left .company-info h5 {
-  font-size: 12px;
+  font-size: 1rem;
   color: #02C998;
   vertical-align: text-bottom;
   display: flex;
   align-items: baseline; }
 
 footer .footer-left .company-info p {
-  font-size: 12px;
+  font-size: 1rem;
   margin-bottom: 2px; }
 
 footer .footer-left .list-trade-service h4 {
-  font-size: 12px;
+  font-size: 1rem;
   margin-top: 25px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -902,7 +907,7 @@ footer .footer-right .unit-owner img {
   margin-bottom: 15px; }
 
 .content-detail h4.title {
-  font-size: 20px; }
+  font-size: 1.67rem; }
 
 .content-detail .article-toolbox {
   display: flex;
@@ -929,7 +934,7 @@ footer .footer-right .unit-owner img {
 
 .content-detail .article-content {
   color: #2B2B2B;
-  font-size: 12px;
+  font-size: 1rem;
   font-family: Lora, Roboto, sans-serif; }
 
 .content-detail .article-content img {
@@ -945,7 +950,7 @@ footer .footer-right .unit-owner img {
   color: #2BB291; }
 
 .link-recent-article a {
-  font-size: 15px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #080808; }
 
@@ -966,7 +971,7 @@ footer .footer-right .unit-owner img {
 
 .related-post h4 {
   position: relative;
-  font-size: 15px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
   height: 20px;
@@ -993,7 +998,7 @@ footer .footer-right .unit-owner img {
 
 .block-comment > h4 {
   position: relative;
-  font-size: 15px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
   height: 20px;
@@ -1061,7 +1066,7 @@ footer .footer-right .unit-owner img {
 
 .block-comment .comment-content p {
   font-family: Lora, Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 1rem;
   color: #2B2B2B;
   margin-bottom: 5px; }
 
@@ -1080,7 +1085,7 @@ footer .footer-right .unit-owner img {
 
 .block-comment .comment-content .comment-form > h4 {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1rem;
   color: #02C998;
   text-transform: uppercase; }
 
@@ -1103,7 +1108,7 @@ footer .footer-right .unit-owner img {
   background: #FFF;
   padding: 0 5px;
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 1rem;
   outline: 0; }
 
 .block-comment .comment-content .comment-form form label span {
@@ -1169,7 +1174,7 @@ footer .footer-right .unit-owner img {
 .list-file-download a {
   color: #2F61D1;
   text-decoration: underline;
-  font-size: 12px; }
+  font-size: 1rem; }
 
 .event-banner {
   background: url("../images/bg-banner-event.png") center center no-repeat;
@@ -1184,7 +1189,7 @@ footer .footer-right .unit-owner img {
 
 .event-banner .event-time {
   color: #FFD833;
-  font-size: 24px; }
+  font-size: 2rem; }
 
 .event-banner .event-title1 {
   color: #FFF;
@@ -1202,7 +1207,7 @@ footer .footer-right .unit-owner img {
   font-family: Montserrat, Roboto, sans-serif; }
 
 .event-banner .f16 {
-  font-size: 16px;
+  font-size: 1.33rem;
   color: #FFF; }
 
 .event-banner .f16 > div {
@@ -1218,7 +1223,7 @@ footer .footer-right .unit-owner img {
   padding: 0 30px;
   border-radius: 11px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.33rem;
   color: #FFF;
   display: inline-block;
   margin-top: 20px; }
@@ -1247,7 +1252,7 @@ footer .footer-right .unit-owner img {
 .event-banner .countdown-event p {
   margin-bottom: 0;
   color: #FFF;
-  font-size: 16px; }
+  font-size: 1.33rem; }
 
 .about-event {
   margin-top: 100px; }
@@ -1259,7 +1264,7 @@ footer .footer-right .unit-owner img {
   background: linear-gradient(to right, #68347D 0%, #e20a6c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 16px; }
+  font-size: 1.33rem; }
 
 .about-event .welcome {
   font-size: 40px;
@@ -1273,7 +1278,7 @@ footer .footer-right .unit-owner img {
   padding: 0 30px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.16rem;
   color: #FFF;
   display: inline-block;
   margin-top: 20px; }
@@ -1287,7 +1292,7 @@ footer .footer-right .unit-owner img {
   box-shadow: none; }
 
 .about-event .list-feature .no-shadow h4 {
-  font-size: 14px;
+  font-size: 1.16rem;
   margin-bottom: 0; }
 
 .about-event .list-feature .no-shadow p {
@@ -1309,11 +1314,11 @@ footer .footer-right .unit-owner img {
 
 .about-event .list-feature .feature-item h4 {
   color: #13124b;
-  font-size: 14px;
+  font-size: 1.16rem;
   margin-bottom: 0px; }
 
 .about-event .list-feature .feature-item p {
-  font-size: 12px;
+  font-size: 1rem;
   color: #9A9A9A;
   margin-bottom: 0; }
 
@@ -1410,7 +1415,7 @@ footer .footer-right .unit-owner img {
   background: linear-gradient(to right, #68347D 0%, #e20a6c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 16px;
+  font-size: 1.33rem;
   text-transform: uppercase; }
 
 .schedule-event .schedule-event-title {
@@ -1455,7 +1460,7 @@ footer .footer-right .unit-owner img {
   font-weight: 500; }
 
 .schedule-event .plan-date .plan-item .p-year {
-  font-size: 16px;
+  font-size: 1.33rem;
   line-height: 18px; }
 
 .schedule-event .plan-date .plan-item.box-yellow.active {

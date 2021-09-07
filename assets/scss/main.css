@@ -11,6 +11,11 @@ body {
   font-size: 13px;
   font-family: "Roboto", sans-serif;
 }
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -373,6 +378,7 @@ header .search-bar .search-input-block .search-input {
 @media (max-width: 768px) {
   header .search-bar .search-input-block .search-input {
     height: 30px;
+    max-width: 100%;
   }
 }
 header .search-bar .search-input-block .search-submit {

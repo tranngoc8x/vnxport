@@ -411,6 +411,7 @@ header {
         min-width: 180px;
         @include max_screen_768{
           height: 30px;
+          max-width: 100%;
         }
       }
 
