@@ -12,6 +12,9 @@ body {
   min-height: 100%;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
+  @include max_screen_500{
+    font-size: 12px;
+  }
 }
 
 a {
