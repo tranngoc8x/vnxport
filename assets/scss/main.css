@@ -33,6 +33,23 @@ header .icon-top-new {
 header .top-menu {
   text-align: right;
 }
+header .top-menu .top-logo {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .top-menu .top-logo {
+    display: block;
+  }
+  header .top-menu .top-logo img {
+    max-width: 105px;
+    width: 100%;
+  }
+}
 header .top-menu ul {
   list-style: none;
   margin: 0;
@@ -49,6 +66,11 @@ header .top-menu ul li a {
   font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  header .top-menu ul li a {
+    font-size: 0.8rem;
+  }
 }
 header .top-menu ul li a img {
   height: 16px;
@@ -77,35 +99,9 @@ header .main-menu {
   height: 52px;
   line-height: 52px;
 }
-@media (max-width: 768px) {
-  header .main-menu {
-    height: auto;
-    line-height: unset;
-    background: #FFF;
-  }
-}
-header .main-menu #navbarSupportedContent {
-  z-index: 9;
-}
-@media (max-width: 768px) {
-  header .main-menu #navbarSupportedContent {
-    background: #FFF;
-  }
-}
-header .main-menu .navbar-toggler {
-  border: 0;
-  padding: 0;
-}
-header .main-menu .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(43,178,145, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 header .main-menu .main-nav {
   height: 100%;
-}
-@media (max-width: 620px) {
-  header .main-menu .main-nav .nav-item:hover {
-    background: #1a446d;
-  }
+  flex-wrap: nowrap;
 }
 header .main-menu .main-nav .nav-item .nav-link {
   font-weight: 600;
@@ -113,14 +109,10 @@ header .main-menu .main-nav .nav-item .nav-link {
   padding: 0 15px !important;
   color: #000;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 header .main-menu .main-nav .nav-item .nav-link.active, header .main-menu .main-nav .nav-item .nav-link:hover {
   color: #FFF;
-}
-@media (max-width: 768px) {
-  header .main-menu .main-nav .nav-item .nav-link.active, header .main-menu .main-nav .nav-item .nav-link:hover {
-    color: #023C77;
-  }
 }
 @media (max-width: 960px) {
   header .main-menu .main-nav .nav-item .nav-link {

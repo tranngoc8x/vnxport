@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
-  @include max_screen_500{
+  @include max_screen_500 {
     font-size: 12px;
   }
 }
@@ -35,6 +35,24 @@ header {
   .top-menu {
     text-align: right;
 
+    .top-logo {
+      display: none;
+    }
+
+    @include max_screen_768 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .top-logo {
+        display: block;
+
+        img {
+          max-width: 105px;
+          width: 100%;
+        }
+      }
+    }
+
     ul {
       list-style: none;
       margin: 0;
@@ -51,6 +69,9 @@ header {
           font-size: 1rem;
           text-decoration: none;
           font-weight: 500;
+          @include max_screen_500 {
+            font-size: 0.8rem;
+          }
 
           img {
             height: 16px;
@@ -85,51 +106,23 @@ header {
     background: #2BB291;
     height: 52px;
     line-height: 52px;
-    @include max_screen_768 {
-      height: auto;
-      line-height: unset;
-      background: #FFF;
-    }
-
-    #navbarSupportedContent {
-      z-index: 9;
-      @include max_screen_768 {
-        background: #FFF;
-      }
-    }
-
-    .navbar-toggler {
-      border: 0;
-      padding: 0;
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(43,178,145, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-      }
-    }
 
     .main-nav {
       height: 100%;
+      flex-wrap: nowrap;
 
       .nav-item {
-
-        &:hover {
-          @include max_screen_620 {
-            background: #1a446d;
-          }
-        }
-
         .nav-link {
           font-weight: 600;
           text-decoration: none;
           padding: 0 15px !important;
           color: #000;
           text-transform: uppercase;
+          white-space: nowrap;
 
           &.active,
           &:hover {
             color: #FFF;
-            @include max_screen_768 {
-              color: #023C77;
-            }
           }
 
           @include max_screen_960 {
@@ -198,6 +191,7 @@ header {
         padding: 0;
         list-style: none;
         display: inline-block;
+
         a,
         .nav-link {
           text-transform: uppercase;
@@ -382,6 +376,7 @@ header {
       padding: 5px 7px;
       border: 0;
       background: #d2e3f3;
+
       .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,48,96, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
       }
@@ -399,7 +394,7 @@ header {
         height: 50px;
         display: flex;
         flex-wrap: nowrap;
-        @include max_screen_768{
+        @include max_screen_768 {
           padding: 0 10px;
         }
       }
@@ -414,7 +409,7 @@ header {
         max-width: 300px;
         outline: 0;
         min-width: 180px;
-        @include max_screen_768{
+        @include max_screen_768 {
           height: 30px;
           max-width: 100%;
         }
@@ -426,7 +421,7 @@ header {
         background: #2BB291;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
-        @include max_screen_768{
+        @include max_screen_768 {
           height: 30px;
         }
       }
