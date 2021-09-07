@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100%;
-  font-size: 12px;
+  font-size: 13px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -45,7 +45,7 @@ header {
 
         a {
           color: #2B2B2B;
-          font-size: 12px;
+          font-size: 1rem;
           text-decoration: none;
           font-weight: 500;
 
@@ -448,7 +448,7 @@ main {
 
       .items {
         .title {
-          font-size: 12px;
+          font-size: 1rem;
         }
       }
 
@@ -487,7 +487,7 @@ main {
           z-index: 2;
           color: #02C998;
           text-transform: uppercase;
-          font-size: 15px;
+          font-size: 1.25rem;
         }
 
         position: relative;
@@ -521,7 +521,7 @@ main {
       }
 
       h4 {
-        font-size: 16px;
+        font-size: 1.33rem;
         color: #555555;
         font-weight: 600;
       }
@@ -544,7 +544,7 @@ main {
       .submit {
         background: #02C998;
         color: #FFF;
-        font-size: 12px;
+        font-size: 1rem;
         text-transform: uppercase;
         margin-top: 10px;
         border: 0;
@@ -596,7 +596,7 @@ main {
     width: 100%;
     padding: 0 10px;
     line-height: 32px;
-    font-size: 13px;
+    font-size: 1.08rem;
     font-weight: 500;
     color: #FFF;
     text-transform: uppercase;
@@ -629,7 +629,7 @@ main {
     }
 
     .title {
-      font-size: 14px;
+      font-size: 1.16rem;
       font-weight: bold;
       display: inline-block;
       margin-bottom: 3px;
@@ -649,7 +649,7 @@ main {
     }
 
     p {
-      font-size: 12px;
+      font-size: 1rem;
       color: #2B2B2B;
       font-family: Lora, Roboto, sans-serif;
     }
@@ -664,7 +664,7 @@ main {
 
       .title {
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 1.25rem;
       }
     }
   }
@@ -692,12 +692,12 @@ main {
     color: #FFF;
     padding-left: 0;
     padding-right: 15px;
-    font-size: 12px;
+    font-size: 1rem;
 
     &.active {
       background: transparent;
       color: #02C998;
-      font-size: 14px;
+      font-size: 1.16rem;
       font-weight: 600;
     }
   }
@@ -805,7 +805,7 @@ main {
     opacity: 1;
 
     &.swiper-pagination-bullet-active {
-      font-size: 14px;
+      font-size: 1.16rem;
     }
   }
 }
@@ -858,7 +858,7 @@ main {
     }
 
     h4 {
-      font-size: 12px;
+      font-size: 1rem;
       font-weight: 400;
       margin-bottom: 0;
       font-family: Lora, Roboto, sans-serif;
@@ -899,7 +899,7 @@ main {
       display: block;
       width: 100%;
       margin-top: 10px;
-      font-size: 18px;
+      font-size: 1.5rem;
       color: #02C998;
       margin-bottom: 20px;
     }
@@ -965,7 +965,7 @@ main {
       background: #FFF;
       color: #02C998;
       text-transform: uppercase;
-      font-size: 15px;
+      font-size: 1.25rem;
       font-weight: 600;
     }
 
@@ -1010,11 +1010,11 @@ footer {
 
     .company-info {
       h4 {
-        font-size: 14px;
+        font-size: 1.16rem;
       }
 
       h5 {
-        font-size: 12px;
+        font-size: 1rem;
         color: #02C998;
         vertical-align: text-bottom;
         display: flex;
@@ -1022,14 +1022,14 @@ footer {
       }
 
       p {
-        font-size: 12px;
+        font-size: 1rem;
         margin-bottom: 2px;
       }
     }
 
     .list-trade-service {
       h4 {
-        font-size: 12px;
+        font-size: 1rem;
         margin-top: 25px;
         margin-bottom: 20px;
         font-weight: 600;
@@ -1091,7 +1091,7 @@ footer {
   margin-bottom: 15px;
 
   h4.title {
-    font-size: 20px;
+    font-size: 1.67rem;
   }
 
   .article-toolbox {
@@ -1129,7 +1129,7 @@ footer {
 
   .article-content {
     color: #2B2B2B;
-    font-size: 12px;
+    font-size: 1rem;
     font-family: Lora, Roboto, sans-serif;
 
     img {
@@ -1149,7 +1149,7 @@ footer {
   }
 
   a {
-    font-size: 15px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: #080808;
   }
@@ -1176,7 +1176,7 @@ footer {
 
   h4 {
     position: relative;
-    font-size: 15px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
     height: 20px;
@@ -1208,7 +1208,7 @@ footer {
 .block-comment {
   > h4 {
     position: relative;
-    font-size: 15px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
     height: 20px;
@@ -1285,7 +1285,7 @@ footer {
 
     p {
       font-family: Lora, Roboto, sans-serif;
-      font-size: 12px;
+      font-size: 1rem;
       color: #2B2B2B;
       margin-bottom: 5px;
     }
@@ -1306,7 +1306,7 @@ footer {
 
       > h4 {
         font-weight: 600;
-        font-size: 12px;
+        font-size: 1rem;
         color: #02C998;
         text-transform: uppercase;
 
@@ -1333,7 +1333,7 @@ footer {
           background: #FFF;
           padding: 0 5px;
           margin-right: 10px;
-          font-size: 12px;
+          font-size: 1rem;
           outline: 0;
         }
 
@@ -1415,7 +1415,7 @@ footer {
   a {
     color: #2F61D1;
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 
@@ -1432,7 +1432,7 @@ footer {
 
   .event-time {
     color: #FFD833;
-    font-size: 24px;
+    font-size: 2rem;
 
   }
 
@@ -1454,7 +1454,7 @@ footer {
   }
 
   .f16 {
-    font-size: 16px;
+    font-size: 1.33rem;
     color: #FFF;
 
     > div {
@@ -1473,7 +1473,7 @@ footer {
     padding: 0 30px;
     border-radius: 11px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.33rem;
     color: #FFF;
     display: inline-block;
     margin-top: 20px;
@@ -1505,7 +1505,7 @@ footer {
     p {
       margin-bottom: 0;
       color: #FFF;
-      font-size: 16px;
+      font-size: 1.33rem;
     }
   }
 }
@@ -1520,7 +1520,7 @@ footer {
     background: linear-gradient(to right, #68347D 0%, #e20a6c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 16px;
+    font-size: 1.33rem;
   }
 
   .welcome {
@@ -1536,7 +1536,7 @@ footer {
     padding: 0 30px;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.16rem;
     color: #FFF;
     display: inline-block;
     margin-top: 20px;
@@ -1551,7 +1551,7 @@ footer {
       box-shadow: none;
 
       h4 {
-        font-size: 14px;
+        font-size: 1.16rem;
         margin-bottom: 0;
       }
 
@@ -1577,12 +1577,12 @@ footer {
 
       h4 {
         color: #13124b;
-        font-size: 14px;
+        font-size: 1.16rem;
         margin-bottom: 0px;
       }
 
       p {
-        font-size: 12px;
+        font-size: 1rem;
         color: #9A9A9A;
         margin-bottom: 0;
       }
@@ -1711,7 +1711,7 @@ footer {
     background: linear-gradient(to right, #68347D 0%, #e20a6c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 16px;
+    font-size: 1.33rem;
     text-transform: uppercase;
   }
 
@@ -1761,7 +1761,7 @@ footer {
       }
 
       .p-year {
-        font-size: 16px;
+        font-size: 1.33rem;
         line-height: 18px;
       }
 
