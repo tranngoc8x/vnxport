@@ -1,4 +1,14 @@
-
+//swiprer main
+new Swiper(".swiper-menu", {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    clickable: true,
+    navigation: {
+        clickable: true,
+        nextEl: ".nav-menu-next",
+        prevEl: ".nav-menu-prev",
+    },
+});
 //swiprer main
 new Swiper(".swiper-photo", {
     slidesPerView: 'auto',

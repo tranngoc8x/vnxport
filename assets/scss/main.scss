@@ -107,12 +107,16 @@ header {
     height: 52px;
     line-height: 52px;
 
-    .main-nav {
+    .swiper-menu {
       height: 100%;
-      flex-wrap: nowrap;
+      margin-left: 0;
+      @include max_screen_768{
+        margin-right: 40px;
+      }
+      .swiper-slide {
+        width: auto;
 
-      .nav-item {
-        .nav-link {
+        a {
           font-weight: 600;
           text-decoration: none;
           padding: 0 15px !important;
@@ -129,6 +133,49 @@ header {
             font-size: 10px;
           }
         }
+      }
+    }
+    .nav-menu-prev{
+      left: unset;
+      right: 20px;
+      border: none;
+      height: 44px;
+      width: 20px;
+      display: none;
+      @include max_screen_768{
+        display: block;
+      }
+      &.swiper-button-disabled{
+        //display: none;
+      }
+      &:before{
+        display: none;
+      }
+      &:after{
+        top: unset;
+        right: unset;
+        background: url(../images/arrow-menu.svg) center center no-repeat;
+        transform: rotate(180deg);
+      }
+    }
+    .nav-menu-next{
+      height: 44px;
+      width: 20px;
+      border: none;
+      right: 0;
+      display: none;
+      @include max_screen_768{
+        display: block;
+      }
+      &.swiper-button-disabled{
+        //display: none;
+      }
+      &:before{
+        display: none;
+      }
+      &:after{
+        top: unset;
+        background: url(../images/arrow-menu.svg) center center no-repeat;
       }
     }
 
