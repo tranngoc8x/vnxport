@@ -774,7 +774,7 @@ main {
   }
 
   &:before {
-    content: '';
+    content: '' !important;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -784,7 +784,7 @@ main {
   }
 
   &:after {
-    content: '';
+    content: '' !important;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -800,8 +800,10 @@ main {
   }
 }
 
+
 .swiper-button-prev {
   left: -60px;
+  content : "";
   @include max_screen_960 {
     left: -30px;
   }
@@ -816,6 +818,7 @@ main {
   &:after {
     background: url('../images/arrow-left.png') center center no-repeat;
     background-size: 50%;
+    content : "" !important;
   }
 
   &.nav-photo-prev {
@@ -824,6 +827,7 @@ main {
 }
 
 .swiper-button-next {
+  content : "";
   right: -60px;
   @include max_screen_960 {
     right: -30px;
@@ -839,6 +843,7 @@ main {
   &:after {
     background: url('../images/arrow-right.png') center center no-repeat;
     background-size: 50%;
+    content : "" !important;
   }
 
   &.nav-photo-next {

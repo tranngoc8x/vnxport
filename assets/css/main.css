@@ -646,7 +646,7 @@ main .sidebar .email-register .checkbox-agree input {
   width: 100%; }
 
 .swiper-button:before {
-  content: "";
+  content: "" !important;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -655,7 +655,7 @@ main .sidebar .email-register .checkbox-agree input {
   background: #02C998; }
 
 .swiper-button:after {
-  content: "";
+  content: "" !important;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -667,7 +667,8 @@ main .sidebar .email-register .checkbox-agree input {
   right: 0; }
 
 .swiper-button-prev {
-  left: -60px; }
+  left: -60px;
+  content: ""; }
 
 @media (max-width: 960px) {
   .swiper-button-prev {
@@ -683,12 +684,14 @@ main .sidebar .email-register .checkbox-agree input {
 
 .swiper-button-prev:after {
   background: url("../images/arrow-left.png") center center no-repeat;
-  background-size: 50%; }
+  background-size: 50%;
+  content: "" !important; }
 
 .swiper-button-prev.nav-photo-prev {
   left: -5px; }
 
 .swiper-button-next {
+  content: "";
   right: -60px; }
 
 @media (max-width: 960px) {
@@ -705,7 +708,8 @@ main .sidebar .email-register .checkbox-agree input {
 
 .swiper-button-next:after {
   background: url("../images/arrow-right.png") center center no-repeat;
-  background-size: 50%; }
+  background-size: 50%;
+  content: "" !important; }
 
 .swiper-button-next.nav-photo-next {
   right: -5px; }
