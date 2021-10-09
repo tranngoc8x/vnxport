@@ -9,17 +9,34 @@ new Swiper(".swiper-menu", {
         prevEl: ".nav-menu-prev",
     },
 });
-//swiprer main
-new Swiper(".swiper-photo", {
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    clickable: true,
-    navigation: {
+//swiprer potto
+
+var x = document.getElementsByClassName("swiper-photo");
+
+for (var i = 0; i < x.length; i++) {
+
+    let el = x[i];
+
+    let nx = el.getElementsByClassName("swiper-button-next")[0];
+    let pr = el.getElementsByClassName("swiper-button-prev")[0];
+    console.log(pr)
+
+    new Swiper(el, {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
         clickable: true,
-        nextEl: ".nav-photo-next",
-        prevEl: ".nav-photo-prev",
-    },
-});
+        hashNavigation: {
+            replaceState: true,
+        },
+        navigation: {
+            clickable: true,
+
+            nextEl: nx,
+            prevEl: pr,
+        },
+    });
+}
+
 
 //swiprer main
 new Swiper(".swiper-infographic", {
@@ -35,7 +52,7 @@ new Swiper(".swiper-infographic", {
             spaceBetween: 0,
         },
         640: {
-            slidesPerView:2,
+            slidesPerView: 2,
             spaceBetween: 10,
         },
         768: {
@@ -65,7 +82,7 @@ new Swiper(".swiper-blog", {
             spaceBetween: 0,
         },
         640: {
-            slidesPerView:2,
+            slidesPerView: 2,
             spaceBetween: 10,
         },
         768: {
@@ -121,15 +138,15 @@ new Swiper(".swiper-event", {
     },
 });
 
-$('.toggle-comment').on('click',function(){
+$('.toggle-comment').on('click', function () {
     $('#comment-block').toggle()
 })
-$(".btn-reply-comment").on("click",function(){
+$(".btn-reply-comment").on("click", function () {
     let id = $(this).data('id')
-    $("#"+id).show()
+    $("#" + id).show()
 })
 
 
-$(".close-reply").on("click",function(){
+$(".close-reply").on("click", function () {
     $(this).parent().parent().hide()
 })
