@@ -10,6 +10,18 @@ new Swiper(".swiper-menu", {
     },
 });
 //swiprer potto
+// swiprer main
+new Swiper(".swiper-main-banner", {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    clickable: true,
+    navigation: {
+        clickable: true,
+        nextEl: ".nav-menu-next",
+        prevEl: ".nav-menu-prev",
+    },
+});
+//swiprer potto
 
 var x = document.getElementsByClassName("swiper-photo");
 
