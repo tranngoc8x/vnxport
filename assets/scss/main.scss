@@ -804,11 +804,20 @@ main {
 .swiper-button-prev {
   left: -60px;
   content : "";
+  &.nav-main-banner-prev{
+    left: 20px;
+  }
   @include max_screen_960 {
     left: -30px;
+    &.nav-main-banner-prev{
+      left: 20px;
+    }
   }
   @include max_screen_768 {
     left: -10px;
+    &.nav-main-banner-prev{
+      left: 20px;
+    }
   }
 
   @include max_screen_620 {
@@ -826,14 +835,25 @@ main {
   }
 }
 
+
 .swiper-button-next {
   content : "";
   right: -60px;
+  &.nav-main-banner-next{
+    right: 20px;
+  }
+
   @include max_screen_960 {
     right: -30px;
+    &.nav-main-banner-next{
+      right: 20px;
+    }
   }
   @include max_screen_768 {
     right: -10px;
+    &.nav-main-banner-next{
+      right: 20px;
+    }
   }
 
   @include max_screen_620 {
