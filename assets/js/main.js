@@ -17,8 +17,8 @@ new Swiper(".swiper-main-banner", {
     clickable: true,
     navigation: {
         clickable: true,
-        nextEl: ".nav-menu-next",
-        prevEl: ".nav-menu-prev",
+        nextEl: ".nav-main-banner-next",
+        prevEl: ".nav-main-banner-prev",
     },
 });
 //swiprer potto
